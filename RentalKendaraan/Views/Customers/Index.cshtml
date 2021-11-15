@@ -13,21 +13,20 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NamaCustomer)
+                @Html.DisplayName("Nama Customer")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Nik)
+                @Html.DisplayName("NIK")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Alamat)
+                @Html.DisplayName("Alamat")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NoHp)
+                @Html.DisplayName("No HP")
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdGender)
+                @Html.DisplayName("Gender")
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -49,9 +48,9 @@
                 @Html.DisplayFor(modelItem => item.IdGender)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCustomer">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCustomer">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCustomer">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdCustomer"><i class="fa fa-marker fa-lg"></i></a> |
+                <a asp-action="Details" asp-route-id="@item.IdCustomer"><i class="fas fa-list"></i></a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCustomer"><i class="fa fa-trash-alt fa-lg"></i></a>
             </td>
         </tr>
 }
